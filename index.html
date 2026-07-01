@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的精美网站</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #fff;
+            min-height: 100vh;
+        }
+
+        /* 导航栏 */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: rgba(255,255,255,0.05);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #38bdf8;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 30px;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #38bdf8;
+        }
+
+        /* 主视觉区域 */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 52px;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #38bdf8, #a855f7);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .btn {
+            padding: 14px 36px;
+            background: #38bdf8;
+            color: #000;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #a855f7;
+            transform: translateY(-3px);
+        }
+
+        /* 卡片区域 */
+        .cards {
+            display: flex;
+            gap: 30px;
+            padding: 60px 8%;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            padding: 30px;
+            border-radius: 16px;
+            width: 320px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #94a3b8;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #64748b;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航 -->
+<nav>
+    <div class="logo">MySite</div>
+    <div class="nav-links">
+        <a href=" ">首页</a >
+        <a href="#">关于</a >
+        <a href="#">作品</a >
+        <a href="#">联系</a >
+    </div>
+</nav>
+
+<!-- 主标题 -->
+<section class="hero">
+    <h1>打造属于自己的精美网站</h1>
+    <p>纯 HTML5 + CSS 制作，简约高级、自适应、好看又好用，可直接部署到 GitHub Pages</p >
+    <a href="#" class="btn">开始探索</a >
+</section>
+
+<!-- 内容卡片 -->
+<section class="cards">
+    <div class="card">
+        <h3>简洁美观</h3>
+        <p>现代渐变配色，毛玻璃效果，干净高级，视觉体验极佳。</p >
+    </div>
+    <div class="card">
+        <h3>手机自适应</h3>
+        <p>电脑、平板、手机打开都完美适配，不会变形。</p >
+    </div>
+    <div class="card">
+        <h3>可部署 GitHub</h3>
+        <p>直接上传到 GitHub 仓库，一键开启 GitHub Pages 公开访问。</p >
+    </div>
+</section>
+
+<!-- 底部 -->
+<footer>
+    © 2026 我的个人网站 | HTML5 制作
+</footer>
+
+</body>
+</html>
